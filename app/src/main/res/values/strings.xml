@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">AppFoody</string>
+    <string name="vesion">Phiên bản:</string>
+    <string name="fullname">com.example.fullstack.appfoody</string>
+    <string name="odau">Ở Đâu</string>
+    <string name="angi">Ăn Gì</string>
+    <string name="moinhat">Mới Nhất</string>
+    <string name="danhmuc">Danh Mục</string>
+    <string name="danang">Đà Nẵng</string>
+    <string name="gantoi">Gần Tôi</string>
+    <string name="giaohang">Giao Hàng</string>
+    <string name="danhgia">Đánh Giá</string>
+    <string name="topthanhvien">Top Thành Viên</string>
+    <string name="blogs">Blogs</string>
+    <string name="gameandfun">Game and fun</string>
+</resources>

@@ -1,0 +1,307 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/clodorHomePage"
+    android:orientation="vertical">
+
+    <android.support.v7.widget.Toolbar
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/colorPrimaryDark">
+
+        <ImageView
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            app:srcCompat="@android:drawable/ic_menu_agenda" />
+
+        <RadioGroup
+            android:id="@+id/groupOdauAngi"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:background="@drawable/custom_bogoc"
+            android:orientation="horizontal">
+
+
+            <RadioButton
+                android:id="@+id/rd_odau"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/custon_radion_button_odau"
+                android:button="@android:color/transparent"
+                android:checked="true"
+                android:padding="10dp"
+                android:text="@string/odau"
+                android:textColor="@drawable/changtext_radio" />
+
+            <RadioButton
+                android:id="@+id/rd_angi"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/custom_radio_button_angi"
+                android:button="@android:color/transparent"
+                android:padding="10dp"
+                android:text="@string/angi"
+                android:textColor="@drawable/changtext_radio" />
+        </RadioGroup>
+
+        <ImageView
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_gravity="right"
+            android:layout_marginRight="20dp"
+            app:srcCompat="@android:drawable/ic_menu_add" />
+
+    </android.support.v7.widget.Toolbar>
+    <!--
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/colorWhile"
+            >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="?attr/actionBarSize"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:gravity="center">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:text="@string/moinhat" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:src="@drawable/ic_keyboard_arrow_down_black_24dp" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:background="@color/clodorHomePage"></View>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="?attr/actionBarSize"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:gravity="center">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+
+                    android:text="@string/moinhat" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:src="@drawable/ic_keyboard_arrow_down_black_24dp" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:background="@color/clodorHomePage"></View>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="?attr/actionBarSize"
+                android:layout_weight="1"
+                android:orientation="vertical"
+               android:gravity="center">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:text="@string/moinhat" />
+
+                <ImageView
+
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:src="@drawable/ic_keyboard_arrow_down_black_24dp" />
+            </LinearLayout>
+
+
+        </LinearLayout>
+        -->
+
+    <RadioGroup
+        android:id="@+id/group_rd_home_page"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/colorWhile"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/rd_danh_muc"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:button="@android:color/transparent"
+            android:drawableBottom="@drawable/ic_keyboard_arrow_down_black_24dp"
+            android:gravity="center"
+            android:text="@string/danhmuc"
+            android:textColor="@drawable/changtext_home_page"
+            android:background="@drawable/chang_home_page_tab"
+            android:checked="true"
+
+            />
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:background="@color/clodorHomePage"></View>
+
+        <RadioButton
+            android:id="@+id/rd_moi_nhat"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+
+            android:layout_weight="1"
+            android:button="@android:color/transparent"
+            android:drawableBottom="@drawable/ic_keyboard_arrow_down_black_24dp"
+            android:gravity="center"
+            android:text="@string/moinhat"
+            android:textColor="@drawable/changtext_home_page"
+            android:background="@drawable/chang_home_page_tab"
+
+            />
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:background="@color/clodorHomePage"></View>
+
+        <RadioButton
+            android:id="@+id/rd_dannang"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+
+            android:layout_weight="1"
+            android:button="@android:color/transparent"
+            android:drawableBottom="@drawable/ic_keyboard_arrow_down_black_24dp"
+            android:gravity="center"
+            android:text="@string/danang"
+            android:textColor="@drawable/changtext_home_page"
+            android:background="@drawable/chang_home_page_tab"/>
+
+    </RadioGroup>
+
+    <android.support.v4.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingTop="10dp">
+
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_margin="5dp"
+                    android:layout_weight="1"
+                    android:textAllCaps="false"
+                    android:text="@string/gantoi"
+                    android:background="@drawable/custom_button"
+                    android:drawableLeft="@drawable/nearby"
+                    android:padding="10dp" />
+
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_margin="5dp"
+                    android:layout_weight="1"
+                    android:textAllCaps="false"
+                    android:text="@string/blogs"
+                    android:background="@drawable/custom_button"
+                    android:drawableLeft="@drawable/blog"
+                    android:padding="10dp" />
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingTop="10dp">
+
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_margin="5dp"
+                    android:layout_weight="1"
+                    android:textAllCaps="false"
+                    android:text="@string/giaohang"
+                    android:background="@drawable/custom_button"
+                    android:drawableLeft="@drawable/order"
+                    android:padding="10dp" />
+
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_margin="5dp"
+                    android:layout_weight="1"
+                    android:textAllCaps="false"
+                    android:text="@string/gameandfun"
+                    android:background="@drawable/custom_button"
+                    android:drawableLeft="@drawable/gameandfun"
+                    android:padding="10dp" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingTop="10dp">
+
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_margin="5dp"
+                    android:layout_weight="1"
+                    android:textAllCaps="false"
+                    android:text="@string/danhgia"
+                    android:background="@drawable/custom_button"
+                    android:drawableLeft="@drawable/review"
+                    android:padding="10dp" />
+
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_margin="5dp"
+                    android:layout_weight="1"
+                    android:textAllCaps="false"
+                    android:text="@string/topthanhvien"
+                    android:background="@drawable/custom_button"
+                    android:drawableLeft="@drawable/user"
+                    android:padding="10dp" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+    </android.support.v4.widget.NestedScrollView>
+
+</LinearLayout>
