@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RadioGroup
+        android:id="@+id/group_rd_home_page"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/colorWhile"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/rd_danh_muc"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:button="@android:color/transparent"
+            android:drawableBottom="@drawable/ic_keyboard_arrow_down_black_24dp"
+            android:gravity="center"
+            android:text="@string/danhmuc"
+            android:textColor="@drawable/changtext_home_page"
+            android:background="@drawable/chang_home_page_tab"
+            android:checked="true"
+
+            />
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:background="@color/clodorHomePage"></View>
+
+        <RadioButton
+            android:id="@+id/rd_moi_nhat"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+
+            android:layout_weight="1"
+            android:button="@android:color/transparent"
+            android:drawableBottom="@drawable/ic_keyboard_arrow_down_black_24dp"
+            android:gravity="center"
+            android:text="@string/moinhat"
+            android:textColor="@drawable/changtext_home_page"
+            android:background="@drawable/chang_home_page_tab"
+
+            />
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:background="@color/clodorHomePage"></View>
+
+        <RadioButton
+            android:id="@+id/rd_dannang"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+
+            android:layout_weight="1"
+            android:button="@android:color/transparent"
+            android:drawableBottom="@drawable/ic_keyboard_arrow_down_black_24dp"
+            android:gravity="center"
+            android:text="@string/danang"
+            android:textColor="@drawable/changtext_home_page"
+            android:background="@drawable/chang_home_page_tab"/>
+
+    </RadioGroup>
+
+    <android.support.v4.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingTop="10dp">
+
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_margin="5dp"
+                    android:layout_weight="1"
+                    android:textAllCaps="false"
+                    android:text="@string/gantoi"
+                    android:background="@drawable/custom_button"
+                    android:drawableLeft="@drawable/nearby"
+                    android:padding="10dp" />
+
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_margin="5dp"
+                    android:layout_weight="1"
+                    android:textAllCaps="false"
+                    android:text="@string/blogs"
+                    android:background="@drawable/custom_button"
+                    android:drawableLeft="@drawable/blog"
+                    android:padding="10dp" />
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingTop="10dp">
+
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_margin="5dp"
+                    android:layout_weight="1"
+                    android:textAllCaps="false"
+                    android:text="@string/giaohang"
+                    android:background="@drawable/custom_button"
+                    android:drawableLeft="@drawable/order"
+                    android:padding="10dp" />
+
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_margin="5dp"
+                    android:layout_weight="1"
+                    android:textAllCaps="false"
+                    android:text="@string/gameandfun"
+                    android:background="@drawable/custom_button"
+                    android:drawableLeft="@drawable/gameandfun"
+                    android:padding="10dp" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingTop="10dp">
+
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_margin="5dp"
+                    android:layout_weight="1"
+                    android:textAllCaps="false"
+                    android:text="@string/danhgia"
+                    android:background="@drawable/custom_button"
+                    android:drawableLeft="@drawable/review"
+                    android:padding="10dp" />
+
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_margin="5dp"
+                    android:layout_weight="1"
+                    android:textAllCaps="false"
+                    android:text="@string/topthanhvien"
+                    android:background="@drawable/custom_button"
+                    android:drawableLeft="@drawable/user"
+                    android:padding="10dp" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+    </android.support.v4.widget.NestedScrollView>
+
+</LinearLayout>
