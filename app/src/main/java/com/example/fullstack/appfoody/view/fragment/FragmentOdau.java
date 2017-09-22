@@ -8,6 +8,7 @@ import android.view.View;
 import android.view.ViewGroup;
 
 import com.example.fullstack.appfoody.R;
+import com.example.fullstack.appfoody.model.QuanAnModel;
 
 /**
  * Created by FullStack on 9/20/2017.
@@ -15,11 +16,20 @@ import com.example.fullstack.appfoody.R;
 
 public class FragmentOdau extends android.support.v4.app.Fragment
 {
+    QuanAnModel quanAnModel;
+
     @Nullable
     @Override
     public View onCreateView(LayoutInflater inflater, @Nullable ViewGroup container, Bundle savedInstanceState) {
         View view = inflater.inflate(R.layout.layout_fragment_odau,container,false);
         return view;
 
+    }
+
+    @Override
+    public void onStart() {
+        super.onStart();
+        quanAnModel = new QuanAnModel();
+        quanAnModel.getListQuanAn();
     }
 }
